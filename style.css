@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+:root{
+    --primary: #829f9a;
+    --secondary: #ebeded;
+}
+html {
+
+}
+.main{
+    background: url(./Rain.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.full{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0;
+}
+.display{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 100px;
+    color: var(--secondary);
+}
+.bg{
+    display: flex;
+    background-color: #00000070;
+    border-radius: 20px;
+    padding:1rem 3rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+.showDegree{
+    font-size: 60px;
+    font-weight: bolder;
+    padding: 0 15px;
+    margin: 0 20px;
+    margin: auto;
+}
+.showPlace{
+    font-size: 20px;
+    padding: 0 15px;
+    margin: 0 20px;
+    margin: auto;
+}
+.icon{
+    font-size: 30px;
+    padding: 0 15px;
+    margin: 0 20px;
+}
+
+.data{
+    flex: 1;
+    height: 100vh;
+    border: 1px solid none;
+    background-color: #00000090;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+}
+.search{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 30px;
+}
+.search input{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: #00000090;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: var(--secondary);
+    transition: .3s;
+}
+.search input:hover{
+   
+}
+.search input:focus-visible{
+    outline: none;
+}
+.search button{
+    padding: 10px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #00000090;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: var(--secondary);
+    cursor: pointer;
+    transition: .3s;
+}
+.search button:hover{
+    transform: scale(1.2);
+}
+.search button:active{
+    transform: scale(1);
+}
+.search button i{
+    font-size: 20px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin-bottom: 100px;
+    color: var(--secondary);
+}
+.pressure
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+.humidity{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+.wind{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+.rain{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+.sunRaise{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+.sunSet{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+.copyRight{
+    font-size: 1.2rem !important;
+}
+
+/* Ipad Design */
+@media screen and (max-width: 780px) {
+    .full{
+        flex-direction: column;
+    }
+    .details{
+        margin-bottom: 30px;
+    }
+    .display {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-top: 111px;
+        color: var(--secondary);
+    }
+    .bg {
+        display: flex;
+        background-color: #00000070;
+        border-radius: 20px;
+        padding: 1rem 0rem;
+        margin: 0 1rem;
+        border: none;
+        box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px
+    }
+    .showDegree{
+        font-size: 3rem;
+        font-weight: bolder;
+        padding: 0 15px;
+        margin: 0 20px;
+        margin: auto;
+    }
+    .showPlace{
+        font-size: 1rem;
+        padding: 0 10px;
+        margin: 0 5px;
+        margin: auto;
+    }
+    .icon{
+        font-size: 1.77rem;
+        padding: 0 10px;
+        margin: 0;
+    }
+    .search{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .search input{
+        width: 50%;
+        margin: auto;
+    }
+    .search button{
+    padding: 10px;
+    border-radius: 30px;
+    width: 50%;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    background-color: #00000090;
+    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+    color: var(--secondary);
+    cursor: pointer;
+    transition: .3s;
+    }
+    .search div{
+        text-align: center;
+    }
+    .data{
+        backdrop-filter: blur(11px);
+        width: 80%;
+        margin: auto;
+        border-radius: 20px;
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .display{
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-top: 2rem;
+        color: var(--secondary);
+        margin-bottom: 0;
+    }
+    .details{
+        margin-bottom: 0;
+    }
+    .showDegree{
+        font-size: 1.5rem;
+        font-weight: bolder;
+        padding: 0 15px;
+        margin: auto;
+    }
+    .showPlace{
+        font-size: 0.9rem;
+        padding: 0 10px;
+        margin: auto;
+    }
+    .icon{
+        font-size: 1.3rem;
+        padding: 0 10px;
+    }
+    .full{
+        justify-content: space-around;
+    }
+    .data{
+        backdrop-filter: blur(11px);
+        width: 80%;
+        margin: auto;
+        border-radius: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .copyRight{
+        font-size: 1rem !important;
+    }
+
+}

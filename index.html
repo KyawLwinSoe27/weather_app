@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./fontawesome.all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="main">
+        <div class="full">
+            <div class="display">
+                <div class="bg">
+                    <div class="showDegree" id="degree">08&#176;</div>
+                <div class="showPlace">
+                    <h1 class="currentPlace" id="place">Yangon</h1>
+                    <!-- <h3 class="currentDate">06:09- Sunday, 06 October 2022</h3> -->
+                </div>
+                <div class="icon">
+                    <img src="https://openweathermap.org/img/wn/04d.png" alt="" id="icon">
+                    <p id="desc">Rainy</p>
+                </div>
+                </div>
+                
+
+            </div>
+            <div class="data">
+                <div class="search">
+                    <input type="text" placeholder="Yangon" value="yangon" id="input_value">
+                    <div>
+                        <button id="btn"><i class="fa-brands fa-searchengin"></i></button>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="pressure" x>
+                        <h3>Pressure</h3>
+                        <h3 id="pressure">86%</h3>
+                    </div>
+                    <div class="humidity" id="">
+                        <h3>Humidity</h3>
+                        <h3 id="humidity">62%</h3>
+                    </div>
+                    <div class="wind">
+                        <h3>Wind</h3>
+                        <h3 id="wind">8km/h</h3>
+                    </div>
+                    <!-- <div class="rain">
+                        <h3>UV</h3>
+                        <h3 id="uv">8mm</h3>
+                    </div> -->
+                    <div class="sunRaise">
+                        <h3>Sun Raise</h3>
+                        <h3 id="sunRise">8mm</h3>
+                    </div>
+                    <div class="sunSet">
+                        <h3>Sun Set</h3>
+                        <h3 id="sunSet">8mm</h3>
+                    </div>
+                    <div style="text-align: center; font-weight: bolder; color: white;" class="copyRight" >
+                        Developed by Kyaw Lwin Soe
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
